@@ -17,7 +17,12 @@ module.exports = function(environment) {
         Date: false
       }
     },
-
+firebase: {
+    apiKey: "AIzaSyCI1XnY4CTGAk6CgZCsKiNaOV18cYw1ucY",
+    authDomain: "super-reviews.firebaseapp.com",
+    databaseURL: "https://super-reviews.firebaseio.com",
+    storageBucket: "super-reviews.appspot.com"
+},
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

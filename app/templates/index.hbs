@@ -1,0 +1,8 @@
+<h1>Welcome to review site</h1><br>
+<h2>Below are a list of restaurants you can review and rate</h2>
+
+<ul>
+  {{#each model.reviews as |review|}}
+    <li>{{review-tile review=review}}</li>
+    {{/each}}
+  </ul>

@@ -1,0 +1,10 @@
+{{! A Component responsible for listing properties to be rated on the index template}}
+{{! This Component also shows and hides images}}
+<li>
+  {{#link-to 'review' review.id}}{{review.restaurant}} in {{review.city}}. Author: {{review.author}}{{/link-to}}
+  {{#if imageIsShown}}
+  <p><img src={{review.image}} {{action 'hideImage'}}></p>
+  {{else}}
+  <button {{action 'showImage'}}>Show Image</button>
+  {{/if}}
+</li>
