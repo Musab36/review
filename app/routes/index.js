@@ -7,4 +7,11 @@ export default Ember.Route.extend({
           rates: this.store.findAll('rate')
       });
   },
-});
+  actions: {
+    saveProperty(params) {
+      var newProperty = this.store.createRecord('review', params);
+        newProperty.save();
+        this.transitionTo('index');
+      }
+    }
+  });
