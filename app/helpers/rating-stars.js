@@ -10,7 +10,7 @@ if(ratingStar.get('rates').get('length') >= 5) {
   return '★★★';
 }else if (ratingStar.get('rates').get('length') >= 2) {
   return '★★';
-}else if(ratingStar.get('rates').get('lenght') >= 1) {
+}else if(ratingStar.get('rates').get('length') >= 1) {
   return '★';
 }
 }

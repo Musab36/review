@@ -1,11 +1,10 @@
 import Ember from 'ember';
 
 export function totalRates(params) {
-  var totalRates = 0;
-  for( var i = 0; i < params.rates; i++) {
-    totalRates += params.rates[i].rate;
+  var totalRates = params[0];
+  if(totalRates.get('rates').get('length') > 0) {
+    return  length;
   }
-  return totalRates.params;
 }
 
 export default Ember.Helper.helper(totalRates);
