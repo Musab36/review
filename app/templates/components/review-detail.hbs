@@ -1,6 +1,21 @@
+<h2>This wonderful {{review.restaurant}} restaurant is located in {{review.city}}</h2>
+<br>
 
-<ul>
-  {{#each review.rates as |rate|}}
-  {{rating-tile rate=rate}}
+{{rating-stars review}}
+
+{{#if imageShowing}}
+<p><img src={{review.image}} {{action 'imageHide'}}></p>
+{{else}}
+<button {{action 'imageShow'}}>Show Image</button>
+{{/if}}
+
+<div class="container-fluid">
+  <div class="well">
+<h4>All rates and reviews</h4>
+<ol>
+  {{#each sortedRates as |rate|}}
+    <li>{{rating-tile rate=rate}}</li>
   {{/each}}
-</ul>
+</ol>
+</div>
+</div>

@@ -1,0 +1,16 @@
+button {
+  height: 50px;
+  width: 100px;
+  border: 3px solid rgb(23, 242, 185);
+  border-radius: 4px;
+  background-color: rgb(23, 242, 185);
+  color: white;
+}
+button:hover {
+  background-color: white;
+  color: black;
+}
+.show {
+  color: red;
+  cursor: pointer;
+}

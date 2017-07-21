@@ -28,5 +28,9 @@
             "user": "Ashley",
             "rate": 9,
             "comment": "Delicious!"
-            }]
+            }],
+            "favorites": [{
+              "title": "Galactic Grill",
+              "place": "Rio"
+              }]
          }
